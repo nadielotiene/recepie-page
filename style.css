@@ -1,15 +1,66 @@
-/* * {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
-    background-color: #FFF;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    width: 32rem;
+    padding: 2rem;
+}
+
+.omelette {
+    width: 28rem;
+    border-radius: .7rem;
+}
+
+.title, .sub-heading {
+    font-family: "Young Serif", serif;
+}
+
+.title {
+    color: hsl(24, 5%, 18%);
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: .4rem;
+}
+
+.prep-time-title {
+    color: hsl(332, 51%, 32%);
+}
+
+.sub-heading, .nutrient-value {
+    color: hsl(14, 45%, 36%);
+}
+.sub-heading, .nutrient-value {
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrient-value {
+    font-weight: 600;
+}
+
+p, li, .nutrient {
+    color: hsl(30, 10%, 34%);
+    list-style-position: inside;
+    margin: .5rem;
 }
 
 
 
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
