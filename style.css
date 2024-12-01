@@ -28,10 +28,13 @@ body {
 
 .title, .sub-heading {
     font-family: "Young Serif", serif;
+    /* font-weight: 600; */
 }
 
 .title {
     color: hsl(24, 5%, 18%);
+    font-weight: 500;
+    font-size: 2.1rem;
 }
 
 .prep-time {
@@ -40,6 +43,11 @@ body {
 }
 
 .prep-time-title {
+    color: hsl(332, 51%, 32%);
+    font-size: .85rem;
+}
+
+.prep-time-title::marker {
     color: hsl(332, 51%, 32%);
 }
 
@@ -50,14 +58,26 @@ body {
     color: hsl(14, 45%, 36%);
 }
 
+.sub-heading{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 .nutrient-value {
+    font-size: .75rem;
     font-weight: 600;
 }
 
 p, li, .nutrient {
     color: hsl(30, 10%, 34%);
+    font-size: .65rem;
     list-style-position: inside;
     margin: .5rem;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: .6rem;
 }
 
 
