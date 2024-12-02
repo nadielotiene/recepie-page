@@ -18,66 +18,90 @@ body {
     background-color: hsl(0, 0%, 100%);
     border-radius: 1rem;
     width: 32rem;
-    padding: 2rem;
+    margin: 4rem 0;
+    padding: 1.5rem;
 }
 
 .omelette {
-    width: 28rem;
+    width: 29rem;
     border-radius: .7rem;
 }
 
 .title, .sub-heading {
     font-family: "Young Serif", serif;
-    /* font-weight: 600; */
+    /* font-weight: 700; */
 }
 
 .title {
     color: hsl(24, 5%, 18%);
     font-weight: 500;
     font-size: 2.1rem;
+    margin: .7rem 0;
 }
 
 .prep-time {
     background-color: hsl(330, 100%, 98%);
     border-radius: .4rem;
+    margin: 1rem 0;
+    padding: 1rem;
 }
 
-.prep-time-title {
+.prep-time-title, .prep-time-title::marker {
     color: hsl(332, 51%, 32%);
     font-size: .85rem;
 }
 
-.prep-time-title::marker {
-    color: hsl(332, 51%, 32%);
-}
-
-.sub-heading, .nutrient-value {
-    color: hsl(14, 45%, 36%);
-}
 .sub-heading, .nutrient-value {
     color: hsl(14, 45%, 36%);
 }
 
 .sub-heading{
     font-size: 1.3rem;
-    font-weight: 600;
+    /* font-weight: 600; */
+}
+
+table, .hr {
+    border-collapse: collapse;
+    width: 28rem;
+}
+
+.hr, table td {
+    padding: .2rem;
+}
+
+.divider-row, .hr {
+    border-top: 1px solid #DDD;;
 }
 
 .nutrient-value {
-    font-size: .75rem;
+    font-size: .6rem;
     font-weight: 600;
 }
 
 p, li, .nutrient {
     color: hsl(30, 10%, 34%);
-    font-size: .65rem;
+    font-size: .72rem;
+    /* font-size: 16px; */
     list-style-position: inside;
-    margin: .5rem;
+    margin: .5rem 0;
+}
+
+ol li {
+    line-height: 1.1rem;
 }
 
 li::marker {
     color: hsl(14, 45%, 36%);
     font-size: .6rem;
+    font-weight: 600;
+}
+
+ul, li {
+    padding-left: .4rem;
+}
+
+ul li, ol li {
+    padding-left: .4rem;
 }
 
 
