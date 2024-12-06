@@ -24,7 +24,7 @@ body {
 
 .omelette {
     width: 29rem;
-    border-radius: .7rem;
+    border-radius: .5rem;
 }
 
 .title, .sub-heading {
@@ -67,15 +67,25 @@ table, .hr {
 
 .hr, table td {
     padding: .2rem;
+    margin: 1rem 0;
 }
 
 .divider-row, .hr {
     border-top: 1px solid #DDD;;
 }
 
+td:nth-child(odd) {
+    padding-left: 1.5rem;
+}
+
+td:nth-child(even) {
+    padding-left: 5rem;
+}
+
 .nutrient-value {
     font-size: .6rem;
     font-weight: 600;
+    margin-left: 0;
 }
 
 p, li, .nutrient {
@@ -92,7 +102,7 @@ ol li {
 
 li::marker {
     color: hsl(14, 45%, 36%);
-    font-size: .6rem;
+    font-size: .7rem;
     font-weight: 600;
 }
 
