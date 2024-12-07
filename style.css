@@ -19,24 +19,23 @@ body {
     border-radius: 1rem;
     width: 32rem;
     margin: 4rem 0;
-    padding: 1.5rem;
+    padding: 1.8rem 2rem;
 }
 
 .omelette {
-    width: 29rem;
+    width: 28rem;
     border-radius: .5rem;
 }
 
 .title, .sub-heading {
     font-family: "Young Serif", serif;
-    /* font-weight: 700; */
+    margin: 1rem 0;
 }
 
 .title {
     color: hsl(24, 5%, 18%);
     font-weight: 500;
     font-size: 2.1rem;
-    margin: .7rem 0;
 }
 
 .prep-time {
@@ -60,13 +59,18 @@ body {
     /* font-weight: 600; */
 }
 
+.bullet-space {
+    margin: .4rem;
+}
+
 table, .hr {
     border-collapse: collapse;
     width: 28rem;
+    margin-top: 1rem;
 }
 
 .hr, table td {
-    padding: .2rem;
+    padding-bottom: .45rem;
     margin: 1rem 0;
 }
 
@@ -85,31 +89,37 @@ td:nth-child(even) {
 .nutrient-value {
     font-size: .6rem;
     font-weight: 600;
-    margin-left: 0;
+}
+
+p {
+    line-height: 1.1rem;
 }
 
 p, li, .nutrient {
     color: hsl(30, 10%, 34%);
-    font-size: .72rem;
-    /* font-size: 16px; */
+    font-size: .7rem;
     list-style-position: inside;
     margin: .5rem 0;
 }
 
 ol li {
     line-height: 1.1rem;
+    list-style-position: outside;
+    margin: .5rem 0 .5rem 1.1rem;
 }
 
 li::marker {
     color: hsl(14, 45%, 36%);
-    font-size: .7rem;
     font-weight: 600;
+
+    margin-right: 5rem;
 }
 
-ul, li {
-    padding-left: .4rem;
-}
-
+/* ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+} */
+    
 ul li, ol li {
     padding-left: .4rem;
 }
