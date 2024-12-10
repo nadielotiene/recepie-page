@@ -34,14 +34,17 @@ body {
 
 .title {
     color: hsl(24, 5%, 18%);
-    font-weight: 500;
-    font-size: 2.1rem;
+    font-size: clamp(2.1rem, 5vw, 2rem);
+}
+
+.title, li::marker, .nutrient-value  {
+    font-weight: 600;
 }
 
 .prep-time {
     background-color: hsl(330, 100%, 98%);
     border-radius: .4rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 1rem;
 }
 
@@ -50,22 +53,46 @@ body {
     font-size: .85rem;
 }
 
-.sub-heading, .nutrient-value {
+.sub-heading, li::marker, .nutrient-value {
     color: hsl(14, 45%, 36%);
 }
 
 .sub-heading{
     font-size: 1.3rem;
-    /* font-weight: 600; */
 }
 
 .bullet-space {
     margin: .4rem;
 }
 
-table, .hr {
+p {
+    line-height: 1.4rem;
+}
+
+p, li, .nutrient {
+    color: hsl(30, 10%, 34%);
+    font-size: clamp(1.1rem, 5vw, .7rem);
+    list-style-position: inside;
+    margin: .5rem 0;
+}
+
+ol li {
+    line-height: 1.1rem;
+    list-style-position: outside;
+    margin: .5rem 0 .5rem 1.1rem;
+}
+
+li::marker {
+    margin-right: 5rem;
+}
+    
+ul li, ol li {
+    padding-left: .4rem;
+}
+
+.hr, table {
     border-collapse: collapse;
-    width: 28rem;
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -75,7 +102,7 @@ table, .hr {
 }
 
 .divider-row, .hr {
-    border-top: 1px solid #DDD;;
+    border-top: 1px solid #DDD;
 }
 
 td:nth-child(odd) {
@@ -88,43 +115,27 @@ td:nth-child(even) {
 
 .nutrient-value {
     font-size: .6rem;
-    font-weight: 600;
 }
 
-p {
-    line-height: 1.1rem;
+@media (width <= 430px) {
+    .main {
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+
+        overflow: visible;
+        position: relative;
+        padding-top: 21vh;
+    }
+
+    .omelette {
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        width: calc(100% + 32px);
+        height: auto;
+    }
 }
-
-p, li, .nutrient {
-    color: hsl(30, 10%, 34%);
-    font-size: .7rem;
-    list-style-position: inside;
-    margin: .5rem 0;
-}
-
-ol li {
-    line-height: 1.1rem;
-    list-style-position: outside;
-    margin: .5rem 0 .5rem 1.1rem;
-}
-
-li::marker {
-    color: hsl(14, 45%, 36%);
-    font-weight: 600;
-
-    margin-right: 5rem;
-}
-
-/* ul {
-    list-style-position: inside;
-    padding-left: 1rem;
-} */
-    
-ul li, ol li {
-    padding-left: .4rem;
-}
-
-
 
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
