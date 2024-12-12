@@ -44,7 +44,7 @@ body {
 .prep-time {
     background-color: hsl(330, 100%, 98%);
     border-radius: .4rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
     padding: 1rem;
 }
 
@@ -66,12 +66,12 @@ body {
 }
 
 p {
-    line-height: 1.4rem;
+    line-height: 1.1rem;
 }
 
 p, li, .nutrient {
     color: hsl(30, 10%, 34%);
-    font-size: clamp(1.1rem, 5vw, .7rem);
+    font-size: .7rem;
     list-style-position: inside;
     margin: .5rem 0;
 }
@@ -117,7 +117,7 @@ td:nth-child(even) {
     font-size: .6rem;
 }
 
-@media (width <= 430px) {
+@media (width <= 557px) {
     .main {
         border-radius: 0;
         width: 100%;
@@ -125,7 +125,7 @@ td:nth-child(even) {
 
         overflow: visible;
         position: relative;
-        padding-top: 21vh;
+        padding-top: 45%;
     }
 
     .omelette {
