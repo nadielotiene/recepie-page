@@ -51,6 +51,7 @@ body {
 .prep-time-title, .prep-time-title::marker {
     color: hsl(332, 51%, 32%);
     font-size: .85rem;
+    font-weight: 600;
 }
 
 .sub-heading, li::marker, .nutrient-value {
